@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-The live demo version of the application can be accessed at:
+The live demo version of the application can be accessed at: [lightordarkmode.netlify.app](https://darkorlightmode.netlify.app/)
 
 ## Table of Content
 
@@ -31,7 +31,6 @@ Follow the steps below to run the project using npm (NB: You should have **node*
 $ cd ../dark-light-mode
 $ npm install
 $ npm start // run in dev mode
-$ npm start // run a production-build version
 ```
 
 ## Approach
