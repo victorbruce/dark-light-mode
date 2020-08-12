@@ -1,18 +1,17 @@
 import React from "react";
-import { Store } from "./store/store";
+import { Switch, Route, Redirect } from "react-router-dom";
 
-import Nav from './components/Nav';
-import Header from "./components/Header";
+import Home from "./container/Home";
 
-function App() {
-  const { state } = React.useContext(Store);
-
+const App = () => {
   return (
-    <div className={`${state.theme === "Dark" ? "App--dark" : "App"}`}>
-      <Nav />
-      <Header />
-    </div>
+    <>
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Redirect to="/" />
+    </Switch>
+    </>
   );
-}
+};
 
 export default App;
